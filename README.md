@@ -1,1 +1,1 @@
-# DN2
+V nalogi sem primerjal tri različne metode interpolacije. Najhitrejša po prvem zagonu kode je je rocno izdelana bilinearna interpolacija, ki uporablja le štiri okoliške točke in preprosto linearno kombinacijo, kar pomeni da ni računalniško zahtvn ain zato zelo hitra. Po večih zagonih kode pa postane hitrejša etoda griddedInterpolant deluje na regularni mreži in zato lahko izkoristi optimizirano notranjo implementacijo. Metoda scatteredInterpolant je najpočasnejša, saj mora najprej izvesti  triangulacijo celotnega nabora točk, kar je računsko zahtevno.
